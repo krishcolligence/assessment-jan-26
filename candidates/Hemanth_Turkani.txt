@@ -1,0 +1,33 @@
+Hemanth Turkani — Converted Text
+
+Section 1 – Catering
+Customer, Neighbor, Cook, Helper, Driver, Regular Customer
+Order details include event date, guest count, menu dishes, price estimate,
+receipts, diary entries, shopping list, preparation, and payments.
+
+Process:
+Customer calls owner → availability check → estimate → menu planning →
+shopping list → purchase → preparation → delivery → payment.
+
+Issues:
+Missing order ID, no labels, no structured tracking system.
+
+Section 2:
+GPS tracking needed, time inefficiency, budget constraints.
+
+Section 3:
+Common pattern: peak usage causes slowdown.
+Example: cafeteria seating shortage.
+
+Section 4:
+Possible connection failures and timeout issues.
+
+Section 5:
+Features: text & voice input, fast responses, FAQ answers.
+Development: week‑wise team execution.
+
+Section 6:
+Tracking examples: real estate layouts, supermarket inventory.
+
+Section 7:
+Reflection: leadership helps manage deadlines.

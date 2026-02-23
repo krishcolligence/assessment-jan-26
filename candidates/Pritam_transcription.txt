@@ -1,0 +1,139 @@
+
+Pritam Wankhede
+
+Section 1
+
+1.1
+a) Number of guest
+b) Food as per required
+c) Guest count
+d) Menu
+e) Price estimation
+f) Diary
+g) Dishes
+
+Customer orders require guest count for preparing food, selecting menu, and price estimation. 
+Customer gets budget and can add additional dishes.
+
+1.2
+1) Customer calls to tell the event time and date.
+2) Customer inquires for booking if the hotel is free or not, then informed about price estimation and guest count.
+3) Customer calls back for updating guest count and adding dishes. Helper shops for food items.
+4) Everything gets prepared, delivered, and payment collected from customers.
+
+1.3
+a) If food is not enough after updating the count, customers can cancel orders.
+b) Can order from outside for increased 50 people.
+c) If order is not fulfilled, customer may not order again in future.
+
+System affected by guest count change:
+a) Time for preparing food and delivering on time
+b) Food items
+c) Helpers may be needed more for buying items and preparing food
+
+1.4
+a) Name of customers as each has different ordered dishes
+b) Categories like spicy, sweet kind of dishes
+c) Day to deliver and items required
+
+2)
+a) Name of customer
+b) Time to deliver
+c) Category of dishes
+d) Count of guest
+
+Section 2
+
+2.1 Agree On
+a) Real-time tracking makes travel easier and on time
+b) Evening demand increases as crowd increases
+c) Routing plan should be better to avoid traffic and save time
+
+Disagree On
+a) Routes are confirmed so no need for more buses; it will affect traffic. Main travel time is morning and evening.
+b) Budget cannot be increased
+c) More buses
+
+2.2
+Provide real-time tracking to save time. Morning buses are empty, so college can schedule proper time to pick maximum students and reduce routing. Avoid traffic by fixing time. Use student survey percentage to decide.
+
+2.3
+Best solution: Real-time tracking and routing plan so students and drivers save time. Reduce evening crowd using nearby routing locations.
+
+2.4
+1) Interacting with students to create rules
+2) Communication to create routine schedule and reduce evening crowd
+3) Create WhatsApp group so if anyone is absent driver can change route
+
+Section 3
+
+3.1
+Crowd increases at particular times, mainly closing or ending time. Idea is to schedule properly before things get late.
+
+3.2
+Scheduling time is important. Start working from start, not at end point.
+
+3.3
+Give chairs only when needed; otherwise people who need them most may not get them on time.
+
+3.4
+Give importance to time. Do not wait till the end; otherwise preparation time may not be available.
+
+Section 4
+
+4.1
+1) Time interval issue
+2) Rendering of component
+3) Running multiple times when called
+4) Variable redeclaration
+
+4.2
+Test proper implementation of setInterval. It works after the time set. Do not call the method with different times.
+
+4.3
+Main issue is where timer interval happens; check rendering after that.
+
+Section 5
+
+5.1
+Working on mobile and responding to top questions is easy, but supporting both text and voice input is difficult. Listening and answering every question takes time. All members are beginners and need time to learn.
+
+5.2
+1) Timestamp for every question to answer oldest first
+2) Voice input takes time, so build text input for quick response
+3) Access from every device anytime and anywhere
+
+5.3
+1) Understand question meaning to cover maximum questions in less time
+2) Answer oldest questions first
+3) Prefer text answers as they take less time
+
+5.4
+Answer common questions to save time. Create information about nearby colleges so users can get answers directly.
+
+5.5
+a) System answers questions where confident; otherwise human review is needed.
+b) Check whether system data is updated on time regarding fees, time period, and college-related information.
+c) After updates, database should also be updated. Can identify from student login account.
+
+Section 6
+
+6.1
+Use time everyday with planning.
+
+6.2
+1) Waking up and exercising every day
+2) Working on time
+
+6.3
+Almost clear about things, but getting real-time example requires thinking.
+
+6.4
+Helpful for planning as amount is fixed; can know what items are left and what to buy additionally.
+
+Section 7
+
+1) Finding pattern is easiest as it shows meaning in different patterns related to coding.
+2) Section 6 is small.
+3) Customer orders may get updated sometimes with less time to work; need to handle such situations.
+4) Quick thinking helps to be more productive, save time, and add more things.

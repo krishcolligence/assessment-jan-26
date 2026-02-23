@@ -1,0 +1,28 @@
+Suprith Hegde — Converted Text
+
+Distinct objects:
+Event date, Guest count, Menu, Diary, Price, Shopping list.
+
+Dependency issue:
+Guest count changed but cook not informed → food shortage.
+
+Section 2:
+Bus GPS issues, traffic delays, budget constraints.
+Solutions: increase buses, improve GPS tracking, crowd management.
+
+Section 3:
+Common pattern: peak usage slowdown.
+Examples: gym crowd, printer queue, cafeteria seating.
+
+Section 4:
+Timer app bug due to timestamp errors.
+
+Section 5:
+Realistic features: FAQ answers, fast response, mobile support.
+Unrealistic: voice input, paid tools, beginner team limits.
+
+Section 6:
+Bank account history tracking example.
+
+Section 7:
+Reflection notes.

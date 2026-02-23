@@ -1,0 +1,124 @@
+Name: Aryan Pramod Khaire Email: aryan.khaire001@gmail.com Ph No:
++91-7372864682
+
+======================== SECTION 1 ========================
+
+Q1.1 Things/Objects mentioned in description:
+
+People/Roles used for customization: 1) Catering Business Owner
+(Neighbour) 2) Customers 3) Number of guests 4) Cook 5) Helper for
+shopping 6) Driver
+
+Customers: All data given by customers to neighbour so he can plan: -
+Event Date - No. of guests - Type of food - Estimated Price
+
+Cook: Plans shopping list. Helper brings groceries.
+
+Q1.4 1) Each shopping list should contain unique ID of every customer
+order so he can fetch all items of that customer from database without
+mixing orders. 2) Every customer has unique ID (username/email) linked
+to shopping list. Every order will have unique ID linked with shopping
+list.
+
+Q1.2 (Flow) Customer → Owner → Check availability If free → Give price
+estimate If not free → Wait until free Cook → Generate shopping list Go
+shopping → Cook food → Deliver Payment status: - Paid: Yes → Stop -
+Paid: No → Generate bill → Customer pays
+
+Q1.3 Dependency is functional dependency. If X depends on Y, changes in
+X affect Y.
+
+Other parts affected: 1) Shortage of food 2) Showing less estimated
+price on website 3) Wrong items purchased 4) Mixing of shopping lists
+
+======================== SECTION 2 ========================
+
+Q2.1 Buses are crowded. Need proper routing. Only 40% buses full daily.
+GPS tracking not real-time.
+
+Q2.2 Instead of new buses, re-route efficiently. All buses should handle
+equal number of students.
+
+Q2.3 Balance routes. Restart GPS. Increase trips in evening.
+
+Q2.4 1) Increase budget and use small buses. 2) Maintain GPS tracking
+regularly. 3) Do ID scanning at bus stops.
+
+======================== SECTION 3 ========================
+
+Q3.1 Systems become slow when many users use simultaneously. Example:
+WiFi – 2–4 PM Gym – 6–8 PM Library – Before deadline
+
+Need load balancing.
+
+Q3.2 When many people need resource at same time → long waiting. Avoid
+with balancing techniques.
+
+Q3.3 Cafeteria occupancy: 120 seats, 48 students average. Issues: -
+Students occupy large tables - Lunch break rush - Teachers/staff also
+occupy seats
+
+Q3.4 Roles: - Sponsorship Head - Design Head - Logistics Head
+
+Race condition: Both roles need same resource simultaneously.
+
+======================== SECTION 5 ========================
+
+Q5.1 Exams in 3 weeks difficult with chatbot work. Can manage 2–3 hrs
+daily.
+
+Q5.2 Top features: 1) FAQs 2) Language Model (LLM) 3) Good UI
+
+Q5.3 Timeline:
+
+Week 1: - Gather FAQs - Setup LLM - Install dependencies
+
+Week 2: - Train LLM - Testing
+
+Week 3: - Create UI - Connect backend - Responsive testing
+
+Week 4: - Final testing - Deployment - Improvements
+
+Q5.4 If behind schedule: - Focus on minimal UI - Complete important
+backlog first
+
+Q5.5 Choose showing answers immediately but flag wrong ones. Admin can
+analyze wrong answers. Correct database immediately if errors found.
+
+======================== SECTION 6 ========================
+
+Q6.1 Event sourcing example: Bank account: 1 Jan: Deposit 1000 2 Jan:
+Deposit 10,000 3 Jan: Purchase 8000
+
+Stores every event instead of final state.
+
+Q6.2 Situation 1: Crime scene Store timestamps of events.
+
+Situation 2: App crash Store file path, timestamps, error logs.
+
+Q6.3 All parts of idea clear.
+
+Q6.4 Event cost example: Birthday: ₹1500 Marriage anniversary: ₹2500
+Extra guests: ₹500 Menu change: ₹350 Cheese balls: ₹500 Juices: ₹350
+
+Total: ₹5000
+
+======================== SECTION 4 ========================
+
+Q4.1 Issues: 1) Improper state handling 2) Lifecycle methods not
+executing 3) Background tasks affecting logic 4) Miscalculation in logs
+
+Q4.2 Check: - Timer reset - Start time - Interval - UI
+mounting/unmounting - Performance tab - Core logic math
+
+Q4.3 Inspect each situation carefully.
+
+======================== SECTION 7 ========================
+
+Q7.1 Section 1, 3, 6 easiest.
+
+Q7.2 Section 4 hardest.
+
+Q7.3 Read paragraph multiple times and visualize.
+
+Q7.4 Should have attempted easier sections first.

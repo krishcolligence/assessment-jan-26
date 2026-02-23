@@ -1,0 +1,36 @@
+Narayan Hegde — Converted Text
+
+Entities:
+Customer, Catering owner, Cook, Helper, Driver,
+Order, Event date, Ingredients, Payment, Delivery.
+
+Order Flow:
+Customer places order → owner checks delivery → estimate →
+menu planning → shopping list → preparation → delivery.
+
+Payments:
+Advance, delivery, or monthly payments recorded in payment book.
+
+Order change effects:
+Incorrect shopping list, insufficient food, dissatisfaction,
+money loss, reputation damage.
+
+Section 2:
+Bus delays due to traffic and high evening demand.
+Solutions: reallocate buses, increase evening frequency,
+improve route planning, faster ID scanning.
+
+Section 3:
+Resource overload during peak time.
+
+Section 4:
+Possible timer and device clock issues.
+
+Section 5:
+4‑week beginner project plan using FAQ system.
+
+Section 6:
+Testing and validation steps.
+
+Section 7:
+Reflection notes.

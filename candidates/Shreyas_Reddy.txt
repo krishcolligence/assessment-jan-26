@@ -1,0 +1,35 @@
+Shreyas Reddy — Converted Text
+
+Entities:
+Customer, Owner, Orders, Event date, Guests, Menu,
+Shopping list, Cook, Helper, Driver, Payment.
+
+Process:
+Customer calls → availability check → estimate → menu planning →
+shopping list → helper purchase → delivery → payment recorded.
+
+Dependencies:
+Owner → Cook → Helper → Driver.
+
+Problems:
+Guest count changes causing food shortage and shopping list updates.
+
+Section 2:
+Bus delays due to traffic and ID scanning.
+Solutions: pickup points, smaller buses, GPS tracking.
+
+Section 3:
+Common pattern: excess demand creates bottlenecks.
+
+Section 4:
+Communication gap between sponsorship and logistics teams.
+
+Section 5:
+Easy: FAQ, fast response, text input.
+Difficult: voice input, mobile app, limited time.
+
+Section 6:
+Examples: Amazon tracking, land documents, Git history.
+
+Section 7:
+Reflection notes.
