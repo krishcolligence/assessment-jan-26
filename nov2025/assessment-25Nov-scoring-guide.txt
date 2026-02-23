@@ -1,0 +1,476 @@
+# ⭐ **R&D Engineering Aptitude Test — Model Answer Sheet & Scoring Guide**
+
+Below are:
+
+1. **Model Answers** (what strong answers look like)
+2. **Scoring Guide** (how to score 1–4 for each section)
+
+These are **not** the only acceptable correct answers.
+They serve as *anchors* for evaluation.
+
+> **Scoring Note:** All sections are weighted equally (4 points each) regardless of time allocation. Time differences reflect task complexity, not trait importance. We value all 8 traits equally.
+
+---
+
+# -----------------------------------------
+
+# **SECTION 1 — Breaking Down a Complex Problem**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **1.1 Categories**
+
+* **Server-side issues**: overloaded server, poor backend performance
+* **Network issues**: campus network congestion, ISP slowdown
+* **Student-side issues**: old browser, slow device, weak WiFi
+* **Database issues**: inefficient queries, locking/contention
+* **App-specific issues**: bugs from new update, poor caching
+* **Load-related issues**: too many concurrent users
+* **External factors**: recruitment-week traffic spike
+
+### **1.2 Hypotheses (examples)**
+
+* Server CPU is hitting 100%
+* Some queries are taking too long
+* Resume files too large → slow upload
+* Students with issues are on same WiFi block
+* The app’s last update introduced a regression
+
+### **1.3 Diagnostic Plan**
+
+1. Check server load during slow periods
+2. Check slow database queries
+3. Compare logs for users with vs without issues
+4. Temporarily disable heavy features (test effect)
+5. Test resume upload with sample files
+6. Test from different networks/device types
+7. Revert to previous app version and compare speed
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Clear categories, non-overlapping
+* Multi-hypothesis thinking
+* Diagnosis plan isolates variables
+* Demonstrates structural clarity
+
+### **3 — Strong**
+
+* Good categorization
+* Reasonable hypotheses
+* Steps mostly logical
+
+### **2 — Adequate**
+
+* Categories mixed / incomplete
+* Linear reasoning
+* Diagnosis superficial
+
+### **1 — Weak**
+
+* No structure
+* One-cause thinking
+* Random steps
+
+> **Evaluator Note:** Section 1 tests *breadth and structure* (categorization of a problem space). Section 4 tests *depth and testability* (hypotheses + isolation tests). Score these independently — a candidate may excel at one but not the other.
+
+---
+
+# -----------------------------------------
+
+# **SECTION 2 — Information Synthesis & Contradiction Resolution**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **2.1 Agreements**
+
+* Evenings are crowded
+* Delays occur
+* Something needs improvement
+
+### **Disagreements**
+
+* Students want more buses
+* Admin says buses are under-utilized
+* Drivers blame traffic and scanning delays
+* Students think GPS is needed; drivers say GPS didn’t work
+
+---
+
+### **2.2 Handling the contradiction**
+
+* Instead of more buses → **redistribute**, **reschedule**, **optimize routes**
+* Increase efficiency instead of adding vehicles
+* Shift buses to evening peak from morning slack
+
+---
+
+### **2.3 Balanced Solution**
+
+* Reintroduce GPS with better devices + proper testing
+* Reduce ID-scanning time (auto-scan, app QR, or remove when low traffic)
+* Change timings: fewer morning buses → more evening buses
+* Dynamic routing or express shuttles during peak hours
+
+---
+
+### **2.4 Missing Information**
+
+* Actual bus occupancy per route
+* Average wait times
+* Peak vs non-peak boarding patterns
+* Traffic maps of routes
+* Reliability/tech specs of GPS devices
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Synthesizes, not summarizes
+* Reconciles contradictions creatively
+* Proposes solution using all sources
+* Asks high-value missing information
+
+### **3 — Strong**
+
+* Good synthesis
+* Reasonable solution
+
+### **2 — Adequate**
+
+* Mostly restates data
+* Weak link between sources and solution
+
+### **1 — Weak**
+
+* No synthesis
+* Superficial answer
+
+---
+
+# -----------------------------------------
+
+# **SECTION 3 — Finding Patterns**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **3.1 Pattern**
+
+Demand spikes at specific times → system overloaded.
+
+### **3.2 General Explanation**
+
+“When many people try to use a limited resource at the same time, it becomes overloaded even if the average usage is low.”
+
+### **3.3 Cafeteria Scenario**
+
+* Students may all come during a common break period → peak demand
+* Average occupancy is misleading
+* Solution: staggered lunch timings, introduce pre-booking, increase turnover speed, or open extra counters during peak time.
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Abstract pattern clearly captured
+* Applies pattern expertly to new scenario
+
+### **3 — Strong**
+
+* Finds right pattern
+* Applies reasonably
+
+### **2 — Adequate**
+
+* Pattern partially correct
+* Application vague
+
+### **1 — Weak**
+
+* Misses root pattern
+
+---
+
+# -----------------------------------------
+
+# **SECTION 4 — Figuring Out Why Something Is Wrong**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **4.1 Possible Reasons**
+
+* Phone goes to sleep → background timer paused
+* Timer code uses inaccurate delay loop
+* System clock is drifting
+* App paused due to notifications
+* CPU throttling, battery saver mode
+* Multi-tasking interrupting timer
+
+---
+
+### **4.2 Clean Tests**
+
+* Keep screen on → test if timing stabilizes
+* Run timer on two devices → compare
+* Test with stopwatch → check drift
+* Switch to airplane mode → remove interruptions
+* Add logs for timestamp start/end
+
+---
+
+### **4.3 Narrowing Down**
+
+* Check which tests change the behavior
+* If only one variable affects timing → root cause identified
+* Confirm with repeated trials
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Multiple hypotheses
+* Tests isolate causes
+* Strong reasoning
+
+### **3 — Strong**
+
+* Good hypotheses
+* Tests mostly sensible
+
+### **2 — Adequate**
+
+* Generic reasons
+* Poor test design
+
+### **1 — Weak**
+
+* No hypotheses
+* Random suggestions
+
+> **Evaluator Note:** Section 4 tests *depth and testability* — quality of hypotheses and whether tests isolate variables. This differs from Section 1, which tests *structural categorization*. Avoid halo effects.
+
+---
+
+# -----------------------------------------
+
+# **SECTION 5 — Working with Limits & Choosing What Matters**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **5.1 Feasibility**
+
+* Realistic: answer top questions, mobile support, fast replies
+* Difficult: voice input, full question coverage, advanced NLP
+
+### **5.2 Top 3 Features**
+
+* Text-based Q&A (core value)
+* Simple search/keyword matching
+* Clean mobile interface
+
+Voice input can come later.
+
+---
+
+### **5.3 4-Week Plan**
+
+* **Week 1:** Collect questions, design simple reply logic
+* **Week 2:** Build text Q&A + mobile UI
+* **Week 3:** Exams → light work: test + refine
+* **Week 4:** Final testing, deployment
+
+---
+
+### **5.4 Backup Strategy**
+
+* Drop voice input
+* Reduce questions to top 20
+* Ship only text-based MVP
+* Add improvements later
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Realistic
+* Prioritization clear
+* Good project sense
+* Strong constraint awareness
+
+### **3 — Strong**
+
+* Mostly realistic
+
+### **2 — Adequate**
+
+* Overly optimistic
+* Weak plan
+
+### **1 — Weak**
+
+* No prioritization
+* Unrealistic plan
+
+---
+
+# -----------------------------------------
+
+# **SECTION 6 — Quick Learning Challenge**
+
+# -----------------------------------------
+
+## ✅ **Model Answer (Strong Candidate)**
+
+### **6.1 Simple Explanation**
+
+“A Bloom Filter is a fast method to check if something might be in a list without storing the full list. It can sometimes say ‘maybe present’ by mistake, but it never says ‘not present’ if the item actually exists.”
+
+---
+
+### **6.2 Real-life uses**
+
+* Email spam detection
+* Checking if a password has appeared in a leak
+* Caches (checking if item might be cached)
+
+---
+
+### **6.3 Unclear Parts**
+
+* How hash functions are chosen
+* How many hash functions to use
+* How to handle deletions
+
+(Good answers admit unknowns.)
+
+---
+
+### **6.4 Experiment**
+
+* Create a tiny bit array
+* Choose 2 simple hash functions
+* Insert 5 words → see which bits flip
+* Check queries to observe false positives
+
+---
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Teaches concept clearly
+* Creative examples
+* Honest unknowns
+* Good mini-experiment
+
+### **3 — Strong**
+
+* Good explanation
+* Basic examples
+
+### **2 — Adequate**
+
+* Mechanical explanation
+* Weak examples
+
+### **1 — Weak**
+
+* Cannot explain concept
+
+---
+
+# -----------------------------------------
+
+# **SECTION 7 — Reflection**
+
+# -----------------------------------------
+
+## ⭐ **Scoring Guide**
+
+### **4 — Exceptional**
+
+* Deep self-awareness
+* Identifies real patterns in own thinking
+
+### **3 — Strong**
+
+* Good reflection
+
+### **2 — Adequate**
+
+* Shallow reflection
+
+### **1 — Weak**
+
+* No insight
+
+### **Anchor Examples**
+
+**Score 4 — Exceptional:**
+> "Section 3 was easiest because I naturally look for patterns — I often generalize from examples in conversations. Section 5 was hardest; I kept wanting to include all features instead of cutting scope. Next time, I'd timebox each section and force myself to commit to trade-offs earlier rather than deliberating."
+
+*Why 4: Specific self-knowledge ("I naturally look for patterns"), identifies a concrete weakness ("wanting to include all features"), proposes actionable change ("timebox", "commit earlier").*
+
+**Score 3 — Strong:**
+> "Section 1 was easiest because I've debugged systems before. Section 6 was hard because Bloom Filters were new to me. Next time I'd read questions more carefully before starting."
+
+*Why 3: Honest, reasonable explanations, but generic improvement ("read more carefully") and no deeper pattern about own thinking.*
+
+**Score 2 — Adequate:**
+> "Section 3 was easy. Section 5 was hard because there was a lot to think about. I would manage time better."
+
+*Why 2: Answers the questions but "why" is superficial ("a lot to think about"), improvement is vague ("manage time better").*
+
+**Score 1 — Weak:**
+> "Easy: Section 3. Hard: Section 4."
+
+*Why 1: No reasoning, no reflection, just labels.*
+
+---
+
+# -----------------------------------------
+
+# **SECTION 8 — Communication Clarity (Implicit)**
+
+# -----------------------------------------
+
+Evaluated across entire test:
+
+### **4 — Exceptional**
+
+* Crisp structure
+* Clear writing
+* Strong organization
+
+### **3 — Strong**
+
+* Mostly clear
+
+### **2 — Adequate**
+
+* Understandable but messy
+
+### **1 — Weak**
+
+* Hard to follow

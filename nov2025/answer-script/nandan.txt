@@ -1,0 +1,160 @@
+**Name:** Nandan S. B
+
+# Section 1 - Breaking down a complex problem
+
+**1.1** All possible reasons due to which the online placement portal has become slow are:
+
+**1.2 Technical issues:**
+*   The deployed portal for the placement site has very less server space, leading to servers being overwhelmed, hence causing the delay.
+*   Source-code of the portal is not configured & optimized causing long read & deployment times which may cause timeout errors.
+*   Code cannot handle large file sizes which may cause resume uploads to fail.
+
+**Network issues:**
+*   Server space is limited causing congestion in network as multiple students try to log in.
+*   Portal code may contain the incorrect destination URL, causing page errors.
+*   Uploading resumes takes up server space, which if low may not allow uploads.
+*   Possible DDoS (Denial of Service) attacks which use botnets to overwhelm a network causing crashes, timeout errors & long wait-times.
+
+**Student-side:**
+*   The student may have weak network signals failing to connect to the placement server & hence receiving timeout errors.
+*   Students using the same wifi or network may cause requests to pile up, resulting in latency & longer waiting-times.
+
+**1.3 A step-by-step plan to check the real problem is:**
+1.  Test the server strength & space to see if it can handle large amount of packets & requests.
+2.  Review the source code of the portal and isolate bugs which may impede page load times.
+3.  Inform the security team of a possible DDoS attack if large number of foreign packets are found.
+4.  Create a mail addressed to all students outlining network requirements for accessing and smooth operation of the portal.
+
+---
+
+# Section 2 - Understanding and combining Information
+
+**2.1 All three sources agree on the following:**
+*   Requirement for a common, efficient & budget-friendly GPS tracking system.
+*   Bus to reach destination on time.
+*   Buses to manage both evening & morning demands efficiently.
+
+**The points they disagree on are:**
+*   The cost & budget of implementing a GPS tracking system.
+*   Increasing the number of buses which leads to higher cost & budgetary requirements.
+*   Buses do not run full, however the students complain it is overcrowded.
+
+**2.2 The budget vs No of buses contradiction can be handled in a simple way:**
+*   Decrease the number of buses that run in the morning. This will save fuel & maintenance costs for the bus, while also avoiding wasted space on the buses in the morning.
+*   Since the evening demand is 4x more than the morning we can allocate the saved budget from the morning to deploy more buses in the evening to avoid overcrowding.
+    This would solve the contradiction without going over the budget.
+
+**2.3 A balanced solution for improving the bus system would be:**
+*   Decrease the number of buses that run in the morning and increase the number of buses in the evening to compensate for the demand.
+*   Install a budget friendly GPS system which can track the location of the bus while also suggesting routes to the driver (E.g: Google maps share location & route-planning feature).
+*   Buses can save time by creating a list of students whose destination is on the route & verifying the students as they board the bus. This will make ID scans obsolete.
+*   School administration must plan each buses destination & route with time and fuel consumption in mind (They can use Dijkstra's algorithm!). This will save time & fuel money which will impact the budget positively.
+    This solution plan covers the demands of all three sources and has a positive impact on the budget.
+
+**2.4 Three pieces of additional information that would help in making a better recommendation are:**
+1.  The reason (budget, efficiency & usage) why the GPS system was discontinued. This information can impact the implementation of the GPS system for tracking buses & efficient route planning.
+2.  Any alternative modes of transport students may use to reach the school. This can help us assess the exact demands for the bus-service at mornings & evenings.
+3.  The number of buses currently in deployment, which will help us assess the constraints on the budget & different ways we can increase/decrease the number of buses to meet the demands of the students.
+
+---
+
+# Section 3 - Finding Patterns
+
+**3.1 The common pattern in all 3 situations are:**
+
+**Situation A:** College wifi becomes slow between 2-4 PM.
+The reason the wifi is slow between 2-4 pm is due to the heavy network traffic as students access the college wifi for lab work, research or other academic purposes, causing heavy traffic in the network.
+
+**Situation B:** The gym is full 6-8 PM but empty at most other times.
+Majority of the students & employees work 9am-5pm. Hence they are free post 5pm. Many head to the gym for a workout or keeping active between 6-8 PM, hence it is full at this time frame. It is empty at other times as the people are at work or college.
+
+**Situation C:** The library printer queue becomes very long before assignment submission.
+Students usually procrastinate till the last minute of assignment submission, hence resulting in the long queue outside the printer, in order to print & submit their assignment.
+
+The common idea behind all the 3 situations is the daily routine of students from academics to the gym & assignment submissions. In all 3 scenarios **CONGESTION** takes place.
+
+**3.2** The pattern in simple terms is congestion. When a specific period of time deals with heavy traffic, or influx due to the reasons given in the answers above.
+
+**3.3** Throughout the day the cafeteria may only be used thrice, i.e breakfast, lunch & dinner. Breakfast & dinner may see an average of 40% occupancy as many may have from home or outside. The most congested time of the day is lunch, where all employees gather in the cafeteria. Hence finding a seat at this particular time may be difficult even if the average occupancy is 40%. A solution for this scenario, may be to increase the number of seats in the cafeteria, to have ample seating space for all the students.
+
+---
+
+# Section 4 - Figuring out Why something is Wrong
+
+**4.1 The four possible reasons why this might be happening are:**
+1.  Incorrect values given to the timer in the code, such as seconds shortage or incorrect incremental logic which leads to the timer ringing at the wrong time.
+2.  If the timer uses the system time to keep count, perhaps the system timer is faulty leading to incorrect ringing.
+3.  The trigger function from the timer is triggered prematurely or delayed leading to the timer misbehaving.
+4.  The code may have an input error causing the timer to misunderstand the input & hence ring at incorrect time.
+
+**4.2 A test to confirm from each reason is:**
+1.  Review the code & test it by querying inputs to find the exact logical/value mistake in the values.
+2.  Re-check the date & time of the system & configure the timer accordingly.
+3.  Check the trigger function in the code and review. Remove & debug faulty codes & test it by setting a given time & cross-check using an independent timer.
+4.  Test the timer by using different inputs to pinpoint the exact error. This is called query testing.
+
+**4.3** If more than one reason seem plausible, we can find the root cause through logical input querying & code-reviews. We must cross-check each output with a working timer in-order to reach the correct model & conclusion.
+
+---
+
+# SECTION 5 - Working with limits and Choosing What Matters
+
+**5.1** The easy & realistic goals for the project are:
+*   **Answer top 50 common questions:** These 50 questions can just be stored in a database with answers pre-written. The bot can then pull these responses from the database and display. This does not require alot of processing power and can be done using free softwares (SQLite, MongoDB etc).
+*   **Fast responses:** Assuming the bot pulls responses from a database, the responses will be fast as the bot does not using thinking power or an Large Language Model.
+
+The difficult & unrealistic goals for the project are:
+*   **Work on mobile:** Optimizing the chatbot for mobile requires knowledge on mobile web/app development & requires major changes to the desktop model which is time-consuming.
+*   **Support both text & voice-input:** Creating an AI model which responds to text is feasible, however voice input is difficult as the model must understand and translate the voice input to text, which is not easy for beginners. It can also be inaccurate & may require constant fixes & debugging which is time-consuming.
+
+**5.2 The top three features to build first are:**
+1.  The database with the top 50 questions answers. This matters as it will satisfy the majority of the users, without needing a complex model. This model will also serve up fast responses and is easy to create.
+2.  The User Interface which showcases the chatbot & input space. An innovative & captivating UI is important as it will help hold the audience attention and make the chatbot content readable. It may also give the impression of quality to new users, helping expand the user-base of the chatbot.
+3.  Input space must be accurate & visible to the user. The input assuming it is text-based, must give accurate information to the model to generate relevant outputs. The bot must be able to read & match the input to the 50 questions in the database. If an LLM model is used, the model must understand & generate a output that is closest to the inputs requirements.
+
+**5.3 A practical 4-week plan based on the given limits are:**
+**Week 1:** Create a concise plan for creating the FAQ chatbot (Brainstorming, Data Flow Diagrams etc). Create the backend database using SQLite or MongoDB in order to store the 50 common questions.
+*   Create the basic fundamental UI to receive inputs from the model.
+
+**Week 2:**
+*   Optimize the basic fundamental UI for mobile devices. This can be done using free softwares such as flutter.
+*   Link an existing LLM model to the chatbot. This can be done using Ollama which contains models such as GPT, Mistral and Gem. This will allow the chatbot to generate content using NLP. Keep in mind, to download & use basic LLM models such as Gem.b2, which does not require high processing power (nothing above 8GB RAM).
+*   Start work on voice-chat feature. Since this is complicate a copy of the project can be made to test & debug.
+
+**Week 3:**
+*   Exams, hence no progress made in chat bot.
+
+**Week 4:**
+*   Deploy & Containerize the model using Docker.
+*   Deploy the bot using AWS EC2 (Free version).
+*   Receive feedback from initial users & debug accordingly.
+
+**5.4** If in two weeks, we are behind the schedule, we can deploy the basic model created in week 1, if the requirement is urgent. Since the limit has exams in Week 3, realistically we must work extra hours in week 4, in order to meet the requirement. If this is not possible, we must scale back some feature such as voice-input and mobile support to deliver an efficient desktop-based chatbot.
+
+---
+
+# Section 6 - Quick Learning Challenge
+
+**6.1** A Bloom Filter is a code function that checks the given input set to showcase if a particular item is present in the set or not. If the filter returns with all positions as 1, the item **MAY** be in the set. However, if even one position is 0, the item is definitely **not** in the set. The disadvantage of using this filter is that it gives alot of false-positive i.e may show an item as present, even though it doesn't actually exist in the set. However it never returns false-negatives, i.e show not present for an item that is present.
+
+**6.2 Two real-life situations where this data structure may be useful is:**
+*   **Online e-commerce:** Suppose the user searches for a particular item on an e-commerce site, such as Amazon or Flipkart. The site can use the Bloom-Filter to check if the user-entered item exists or is out of stock.
+*   **Lost & found algorithm:** A lost & found algorithm, which can check if a particular item is in the set using the Bloom Filter, to inform the user.
+
+**6.3: The parts that are still unclear to me from the given concepts are:**
+1.  Why does the Bloom Filter return false-positives?
+2.  The type of hashing (SHA-216, SHA-516 etc) it uses to achieve the positions.
+3.  Since hashes are sensitive to change in inputs, how will input quality affect the algorithm?
+4.  Why can the algorithm return present items with certainty? *(Note: The writer seems to have meant "Why can't" or is questioning the lack of certainty, but the text says "Why can" with a crossed out word before certainty).*
+
+**6.4** An experiment that could make me understand Bloom Filter better is using real-life scenarios where this data structure is used. Analyzing how companies such as Amazon, Flipkart or E-bay implement the algorithm and work around the existing problems & disadvantages can give a practical viewpoint of this data-structure.
+
+---
+
+# Section 7 - Reflection
+
+**R1** The section that felt the easiest to me was finding patterns (Section 3) and Choosing what matters (Section 5).
+
+**R2** The section I felt was the hardest was Breaking Down a Complex Problem (Section 1), as I had difficulty of choosing the most appropriate reason from the root of the problem.
+
+**R3** I would approach this paper with a more critical mindset and try to really delve; dive into the problem scenarios. This would help me visualize the solutions better and come up with more efficient plans for the solutions.

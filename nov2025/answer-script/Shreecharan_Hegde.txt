@@ -1,0 +1,187 @@
+
+Section 1:
+Name: Shreecharan D. Hegde
+
+1.1 Technical Issues
+
+1.1.1 Groups of Issues:
+- Technical issues in college side
+- Development bugs
+- Student side issues
+- Network issues
+- Browser issues at user side
+- Hosting services problem
+
+1.2 Technical issues in College Side:
+Reasons:
+- Every service which is hosted has a limit in how much load it can handle at a time.
+- If correct load balancing methods are not used, it might lead to this problem.
+- If college used services like AWS or similar.
+- Some of servers went offline abruptly.
+
+1.3 Development bugs:
+- While developing software there are bugs, then it might lead to failure in file uploading when load is high (although probability is less considering above situations).
+
+2) Student side issues:
+- The system used by student is very old then it can lead to this problem due to old RAM & processors / old wifi drivers.
+- Student has low computing power due to many background programs executing, causing laggy experience.
+
+3) Network issues:
+- If there are network issues in either of both sides, it can cause problem.
+- Student has low speed internet (<500 kbps) while uploading.
+
+4) Browser issues at user side:
+- Sometimes users use browsers with strict privacy settings which can lead to laggy experience & problem in uploading.
+- Eg: Browser with too much adblock & privacy settings (u-block origin).
+- Because they sometimes prevent few features of site loading which can cause problem.
+
+5) Hosting services problem:
+- If college is using AWS/Azure or similar services, incorrect load balancing settings and network settings while setting up web portal.
+
+Step-by-step plan to diagnose:
+- First we need to check system requirements at user side.
+- Then particular browser issues (eg: strict privacy).
+- Then if it does not work in any browser, check correct network connection.
+- Still doesn't work then issue must be in host side.
+- Ensure all servers are online.
+- Ensure the load balancing policy which is preventing high load.
+- Check if there are issues with hosting services if used like AWS.
+- Update load balancers and recheck if it can handle load.
+- If all of them doesn’t solve then check for any development bugs.
+
+Section 2:
+
+2.1 All three sources agree on:
+- Buses are late
+- GPS tracking is unsuccessful / need improvement
+
+They disagree on:
+- Increasing budget, bus number
+
+2.2 Taking into account that only 10% buses run full and only morning is crowded:
+- Reducing bus number in morning
+- Increase buses running in evening
+- Like splitting buses between morning & evening with correct way
+
+2.3 Balanced Solution:
+- Implement GPS with properly working model, learning outcomes from previous failure.
+- Planning better routes in both morning & evening.
+- Combine 2/3 routes including nearby areas covering more students.
+- Thus number of GPS units can be reduced.
+- Proper planning and distribution of buses without increasing budget.
+
+2.4 Additional data needed:
+1) Why previous GPS failed? Reasons behind it?
+2) Exact number of students travelling morning & evening, number of buses running.
+3) How did they distribute routes to each bus.
+
+Section 3: Pattern
+
+3.1 Common idea is increased traffic at particular time period.
+
+3.2 When there is high demand for certain things at certain time, then we encounter increase in traffic just around those time periods.
+
+3.3 Average occupancy tells us the collected average during a day, not at a particular time.
+
+- Students encountering scarcity of seats at particular time is due to high demand.
+
+Solutions can be seen in 2 ways:
+1) Cab owners providing increased seat capacity or introducing takeovers.
+2) Students can prevent this by understanding timing of high traffic & coming early or take own if possible.
+
+Section 4:
+
+4.1 Reasons:
+- Not clearing cache of previous timestamps or not handling logic correctly.
+- If showing 10 minutes but in reality it is 11 or 9 minutes.
+- Some issues with code.
+- If some module is imported to implement timer then there can be issues with module.
+- Issues with compiler.
+- Broken local download of particular imports/packages.
+
+4.2 Solutions:
+- If timer is running properly at first, then when again you run at time, it goes wrong if cache is not handled properly.
+- Check the logic and if you are using time rounding to 10 mins, ensure UI elements are in sync.
+- Reimport modules if used.
+- Use different compiler and check.
+- Reinstall every package.
+
+4.3 If more than 1 reason possible, then solve each reason one at a time to arrive at root cause.
+
+Section 5:
+
+5.1 Each reason in its own is easy, but if we need everything at once then it is difficult.
+- Like fast mobile + top 50 Q so that voice.
+- Combination of 2 or more is tough.
+- Have to choose between fast response & text voice.
+
+5.2 As students want to solve their doubts, we need:
+1) Top 50 common Qs
+2) Work on mobile (most of them don’t have PC)
+3) Fast responses
+
+5.3 4-Week work plan:
+
+Week 1:
+- Research on user needs/expectations
+- Finding all information related to the project
+- Like top 50 common questions, what devices they use mostly
+
+Week 2:
+- Choosing tech stack & working on project (simple prototype)
+- Combine existing 3 people in a meeting
+- Choose best tech stack based on research
+- Working towards learning how to use / implement them in real world
+- Making roadmap & structure
+- Assigning responsibilities to each based on their strength
+
+Week 3:
+- Developing prototype further
+- Brainstorm about how we can implement these ideas technically in best possible way
+- Choosing only most important features
+- Discussing within ourselves
+
+Week 4:
+- Deploy & feedback
+- Deploy simple most important only feature included model to few people to test
+- Gathering feedback and improving with respect to that
+
+5.4 If we are behind after 2 weeks:
+- Omit few features based on importance
+
+Revised Plan:
+- Build simple prototype with only top 20 common questions & little slow response
+- Try to polish at max as team are there
+
+Week 4 (Revised):
+- Divide our team & one group will test already developed features
+- Other will work on omitted features & try to incorporate
+- Take feedback & gradually increase features after deployment
+
+Section 6:
+
+6.1 Bloom filter tells you if something is present or not.
+- If it is present then it shows or says in whole array (array = bag of non-ordered storage).
+- If there is one zero in bag (array), then item is not present.
+- Sometimes it can lie about if item is present, but it never says item is not in bag if it is in bag.
+
+6.2 Real-life scenario:
+1) Cancer/disease detection – it doesn’t give false alarm about absence.
+2) Spam detection
+3) Fraud detection
+
+6.3 Did not understand how this is processed at code level and why it gives false alarm only related to maybe present.
+
+6.4 If we break down as black or white balls:
+- Black = present (1), white = not present (0)
+- It may find even a single black ball in any case
+- Sometimes all white balls even if item is not in set
+- Black returns to 1, white returns to 0
+
+Section 7:
+
+R1) Section 3 & 5 felt easiest because section 3 I found pattern & understood it easily and section 5 is something I tried to implement previously.
+
+R2) Section 6 concept was easy, but I couldn't get deep dive due to limited information.
+
+R3) I would revisit in opposite approach to first one, more into technical depth of my answers and try to think of same problem in different perspective.

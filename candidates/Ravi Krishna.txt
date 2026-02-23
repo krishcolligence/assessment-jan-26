@@ -1,0 +1,372 @@
+NAME: Ravi Krishna
+DATE: 30/01/2026
+PAGE 1
+
+Section 1:-
+
+This section describes a small catering business that appears to be mainly managed by the neighbour with several manual aspects involved.
+
+1.1. All the distinct things mentioned in the context. We need to look at the flow from the beginning to see what are the objects used.
+
+a) There is an events diary that keeps note of
+
+No. of guests
+
+Date of event
+
+Type of food they want (cuisine, etc.)
+
+b) There is a phone linked to the business where calls come in, maybe separate or same as personal.
+
+c) The details of the menu are then shared with the cook through perhaps a messaging app or a call who then prepares a shopping list based on the items. He might have a recipe book with recipes and a book for making a shopping list.
+
+d) This is a dynamic list which might change based on customer need and involves the neighbour telling and/or updating the cook on new requirements.
+
+e) Then comes the driver who shops so here this involves a vehicle to buy groceries and
+
+PAGE 2
+
+f) Then come containers to put the cooked food. And the food in itself is an object, delivered with all the cutlery and an invoice. Cutlery involves plates, spoons, tissues, glasses etc.
+
+g) Customer payment in terms of cash is another item which can be considered as an event as well.
+
+h) Payment notes book is another object.
+
+These are all the items that can be extracted from the context.
+
+1.2 There are several events that take place across this order flow. It can be divided into these parts:
+
+a) The first event is when a customer calls and gives details to the neighbour.
+
+b) The second event is the neighbour noting the details into the book.
+
+c) A decision taken on step B can be considered as a partial event (Yes/No based on availability).
+
+d) The planning of the menu based on the menu and creating a shopping list for groceries and raw material.
+
+e) This, if it happens is another major event. When the customer changes requirements. This is noted again in the original "note" book.
+
+f) An event dependent on the above event is the neighbour re calling the cook to change the original requirements.
+
+PAGE 2 (Continued)
+
+i) The next event happens after the change to the list (if any), that is purchasing of the raw material a day before.
+
+j) Cooking happens next.
+
+l) Packing and Quality checks.
+
+m) Delivery with possible payment collection.
+
+o) Note of payment in the payments book.
+
+1.3 The change and the downstream effects.
+
+The crucial dependency here was that every time a change comes in, there was no formal process to actually communicate it to the cook. When the neighbour "forgot" she broke that dependency which lead to the mess.
+
+When a change comes in, the neighbour MUST inform the chef of this change.
+
+Everything after the initial order flow changes once the count changes, all in terms of quantity:
+
+The quantity of the food increases.
+
+The quantity of raw materials increases.
+
+The number of spoons, tissues, plates and water bottles increases.
+
+[Note: List skips to 5 on next page]
+
+PAGE 3 (Wait, Page 3/Screenshot 4)
+
+The mode of delivery might change with increased quantity.
+
+1.4 The shopping lists got mixed up:
+
+To prevent this all shopping lists must contain
+
+Order No. on ALL pages.
+
+Event date on ALL pages.
+
+Name and Ph. No. of the source.
+
+The link of Ph. No. and Name must exist between the shopping list and the source, and when the shopping event happens, a confirmation call MUST happen to ensure mix ups don't happen and there is no confusion between the items, guest count, etc.
+
+Section 2:- There are three key stakeholders here:
+
+Students - (Customer)
+
+College Admin - (Manager)
+
+The drivers - (Operator)
+
+2.1 :- All three stakeholders agree that GPS systems are needed, students need it according to the survey. College Admin did the pilot but discontinued it because devices did not work well. The bus drivers say delays happen due to traffic and better route planning is needed. GPS is a pivotal addition here which might allow changing of route.
+
+PAGE 3 (Wait, Screenshot 5)
+RAVI KRISHNA
+
+2.2 There is a critical contradiction here.
+
+30% of the students say mornings are empty but evenings are crowded.
+
+College says budget cannot be increased and 10% buses run full but agree on 4X demand in the evening.
+
+10% is likely an average number which might reinforce the claim that evening crowd is high with buses running at 110% capacity.
+
+With that, there is a simple solution to this, which involves:
+
+Reduction in number of buses in the morning, in combination with route planning to reduce overlaps. This might lead to a reduction in usage of resources and more efficient operation.
+
+Apply those reduced buses to ply in the evening when there is actual demand. This reduces the fuel used per person and increases the percentage of buses that run at just below 100% capacity which makes the overall operation more efficient.
+
+2.3 I can suggest a balanced technology assisted solution... [Text cut off]
+
+(Screenshot 6)
+
+ASSUMPTIONS:-
+
+Every driver has a GPS enabled phone with them.
+
+Scanning of ID must not necessarily happen at entry.
+
+Improving the customer (student) experience is the goal while keeping the solution under budget.
+
+Problems faced by students:-
+Late buses.
+No real time tracking.
+Lack of buses.
+Crowding.
+
+My solution will focus on lack of real time tracking since the survey revealed majority of the students needed that.
+
+Solutions :-
+
+A generic solution will be reimplementing GPS devices with a better device. But
+
+However, creating a link (programmable and dynamic) between the driver and the bus enables us to map a bus to the driver. This can then be used to create an app with the bus driver's phone location to be used as the location.
+
+PAGE 4
+
+This can be combined with dynamic route planning to avoid traffic in real time.
+
+At this point, I would like to prioritize the mapping of buses to drivers via an app and sharing of location to registered students and parents.
+
+This would involve a pilot with just the location sharing and I would push dynamic route planning to a later phase because live sharing would have the biggest impact.
+
+I would measure the success of this through usage, it might be through these metrics:
+
+Increased student satisfaction.
+
+Adoption of the App.
+
+Less than 1% error in location tracking of the bus.
+
+2.4 The additional pieces of information would be:
+
+Missed stakeholders, data from parents on their need.
+
+At what capacity buses run during the morning and evening.
+
+Whether the issue was adoption, technology or reliability.
+
+Section 3 - Pattern detection
+
+3.1 The common problem across three situations is peak time crowd management. All three situations involve huge crowds coming in at specific times which stresses the service and causes inefficiencies and inconsistencies.
+
+3.2 The pattern here is:
+
+The service is fine and non-stressed during normal hours.
+
+The demand rises above available resources during peak hours and/or at specific times.
+
+When this happens, the resource is overstretched and this causes degraded service.
+
+3.3 It is the same problem in different words. Seats in a cafeteria can be considered as a resource, during breakfast, lunch, snacks and dinner times, crowd most likely surges leading to stretching of the resource (seats).
+The average occupancy is 40% because it is most likely empty for all other times compared to peak hours.
+
+PAGE 5
+
+The most simple solution: Staggered entry for lunch.
+
+I assume previously students enter all at once. If they are divided into batches of 120 and given specific timings for breakfast, lunch and dinner, it would ensure seats for all. This might mean 500 students divided into 4-5 batches of 20 minutes each. (Time might change according to their schedule).
+
+3.4 a) Ideally in this situation they should have kept a living document that tracks the availability of stalls and that should have been shared between all three heads.
+
+This would have allowed the flow of information of stalls occupied and stalls taken, with the complete information of who it is assigned to, who was it assigned by and the available stalls.
+
+This information should have been updated in real time and shared to all stakeholders.
+
+b) The Connection — This is a mix of lack of communication and a lack of resources.
+
+(Screenshot 10)
+
+All the problems link back to lack of available resources compared to the need. That is the pattern here.
+
+Section 4 - Debugging
+
+A timer app would follow the following architecture:
+[Input] -> [Convert HH:MM:SS to seconds (system clock format)] -> [Check every second for time] -> If Yes [Ring alarm] / If No [Check again].
+
+4.1 There might be issues in:
+
+conversion of time.
+
+The system clock might be slow or inconsistent due to load.
+
+The check might be failing.
+
+The speaker might be faulty with it ringing inconsistently.
+
+I am assuming the pattern repeats the same for 3 minutes, 5 minutes or any minute it has an error of +/- 1 minute.
+
+4.2 1) I will write test cases for the isolated time conversion function to check if that is the issue.
+2) I will check the usage... [Text cut off]
+
+PAGE 6
+
+Is the check not happening every 1 second, is it iterating faster or slower than what it should.
+
+Check with another speaker/buzzer or perform an isolated speaker test.
+
+4.3 There might be a case where due to inconsistent/very frequent checking, the main thread is blocked and there is a loop that is holding too many resources. Implementing threading and making it thread safe should help in this case.
+
+Section 5 - Prioritization
+
+Assumptions:-
+
+Top 50 common questions are available readily.
+
+Two members are skilled in frontend dev, one is backend and one is an AI/agent dev.
+
+Primary Input is text.
+
+5.1 1) Answering 50 top common questions.
+2) Fast responses.
+
+These are the two requirements that can be delivered within the given constraints.
+
+Since they are beginning... [Text cut off]
+
+(Screenshot 12)
+
+Out of reach:
+
+Text and voice input, text is doable but voice requires advanced TTS and STT systems which are not feasible for beginners in the given time frame.
+
+Since we assumed data is available, we can make sure that those questions are accurately answered.
+
+Fast responses are possible within realistic scope because it mostly depends on the model (LLM) and can be temporarily fixed by using a faster model before further optimization.
+
+5.2 Top three features:
+
+A clean UI with a conversational chatbot which answers FAQs contextually -> This has high user impact where the bot answers with proper contextual data based on the user query.
+
+Link to source truth which was analyzed by the bot: If the user has a doubt regarding the answer, they can check the source of that data. This improves user trust.
+3) Ability to upload images
+
+Ability to save chats: Using the user session and cookies, we can give basic storage of chats to the user.
+
+PAGE 7
+
+These three features target:
+
+User experience
+
+User trust
+
+Customer satisfaction
+and that is the reason for prioritization of these features.
+
+5.3 A project plan for this: In project management, this would follow a vague agile methodology as each task does not necessarily depend on completion of the previous one. We have 28 days. We can assume 3 days for exams in week 3.
+
+In day 0-3:
+
+Frontend devs discuss user flow, design the UI and find dependencies.
+
+Backend dev designs DB architecture, designs API calls.
+
+AI dev checks the data, checks format and designs vector DB.
+
+In days 3-7:
+
+Backend and frontend devs collaborate to discuss compatible JSON data for API calls.
+
+(Screenshot 14)
+
+In days 7-14:
+
+Frontend devs develop the frontend.
+
+Backend dev develops DB and backend architecture.
+
+AI engineer tests the agent responses and compatibility with backend.
+
+In days 15-18: Exams, project paused.
+
+In days 18-21:
+
+Integration of backend with frontend.
+
+API Integration.
+
+In days 21-28: Complete testing including stress testing and penetration testing of the platform done in collaboration between frontend dev and backend dev.
+
+5.4 After two weeks if we are behind schedule, I would narrow the scope further. The main focus would fall to release of the conversational platform and features of links and chat storage would be pushed to a further later phase.
+
+5.5 a) I would choose "show answers quickly but let students flag wrong answers".
+
+PAGE 8
+
+but this also lets us build a database of wrong answers and also gives us verified human feedback data which is very valuable for Reinforcement learning.
+
+b) A student receives wrong answer about hostel registration, they flag it. We see on our end that the data was wrong, so we would need the information of why the student thinks the information given by the bot is wrong.
+
+c) We verify it came from a false entry so then because we have saved all chats with user session, we can:
+
+Correct the data and update the RAG database so the wrong answer stops.
+
+Check and find where the question was asked according to the session id and send callback notifications to all affected session ids.
+
+In the future, implement a generator validator agent where one gives information from source documents and another checks with VERIFIED EXTERNAL SOURCES as well, so chances of hallucination are low.
+
+Section 6 - Quick learning.
+
+6.1 This idea basically says that if we have the full history of events that happened with respect to a specific item, then we can accurately know its current state just by analyzing the history.
+
+For example we can consider a car service station. If we keep track of the cars that enter the station from when it was empty and track the cars leaving the station, we can accurately tell the number of cars in the service station which will help efficiently run it.
+
+6.2 a) Consider a parking garage. Installing sensors at each bay becomes expensive and complex. Instead if the history is captured of which vehicle entered and when it entered and which vehicle exited and when it exited, we can find the capacity available for incoming vehicles. This is an area where this is cost efficient (also helps with security audits).
+
+b) Consider a logistics warehouse. Their inventory management would benefit from this. If an item was signed in by an employee, it is added into the count. If it was signed out or sent out, that shipment [Text cut off]
+
+PAGE 9
+
+by letting the manager know exactly it went out and who it was signed out by.
+
+6.3 The idea is clear, No questions.
+
+6.4 This would involve changing the structure. Their data would change from "Customer X owes ₹5000" to:
+
+Name	Event	Cook Informed	Change
+Customer X	Showed intent	No	+0
+Customer X	Order for 50	Yes	+10,000
+Customer X	changed to added +50 people	Yes	+10,000
+...	...	...	...
+Customer X	Paid in full	Yes	-25,000
+
+This structure would show them a history of the customer purchase which would show them what they need to tell the cook. This would ensure that their changes are not forgotten as analysis of old orders will definitely be run and... [Text cut off]
+
+(Screenshot 18)
+
+This would not help with mixed up lists.
+
+Section 7 - Retrospection.
+
+7.1 All the sections were well framed without confusion, and I excel in product thinking so it felt good but if I have to point, the pattern finding section was the easiest. It was my prior experience with real world problems that helped me spot pattern and help give a solution.
+
+7.2 Section 4 felt the hardest because without the code in front of me, it is hard to hypothesize a coding issue, non-coding issues that I was able to list are fine.
+
+7.3 Any process involves getting information from a client (or find a problem) -> Process information & act on it -> deliver results -> Repeat till satisfaction of customer.
+Once you spot this process, it is easy to analyze any business. This helped me "understand the pieces" and put them together.
+
+7.4 The only thing I would change is code a simple timer, actually write code and then debug it.

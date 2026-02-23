@@ -1,0 +1,209 @@
+# Section 1: Placement Portal Challenges
+
+## When a college's placement portal has become very slow, especially during placement season:
+
+It's a very common and general issue since the web app/app will be receiving much more requests than usual.
+
+-> If the portal is designed in such a way that it can handle too many requests, this wouldn't arise.
+
+## 1.2 Here are some possible reasons:
+
+*   **Technical Issues:** When it comes to designing the portal, developers must have forgotten to design a scalable application which can take too many requests.
+    *   **Issues like:** Network problems from the user side are one of the major & common problems.
+    *   Having too many applications running in the background may slow down the portal as other applications may be consuming the network bandwidth as well.
+
+*   **API's/DB:** Synchronous API will not take too much request and drastically slows down. Even a not optimized database query will become one of the problems.
+
+*   **Servers:** If the hosted servers' IP doesn't match, the response might hang.
+
+## 1.3 As mentioned, having a step-by-step plan to check will solve the problem.
+
+*   **Check-1 (User-side):** The user must first check if they have enough network to run the portal and be able to upload/download.
+*   **Check-2:** Sometimes, a mismatch in the IP addresses may occur, meaning the server takes the request, but the firewall doesn't allow to give the response back, leaving some portals to hang.
+*   **Check-3:** Developers must check if the API's are able to take multiple requests at the same time. If not, they have to use asynchronous APIs.
+*   **Check-4:** Also, optimize the DB query. May use indexing.
+
+## 1.4 Possible Reasons are:
+
+*   **Technical Issues:** Network slowdown, IP mismatch, application not scaled enough, DB query slows down, and sometimes the hosting servers.
+*   **Network Issues:** Slow internet, network or signal problems, mismatch in IP address, or blockage by firewalls.
+
+# Section 2: College Transportation Issues
+
+## Here we can see a common issue a college transportation department faces on a daily basis.
+
+According to the sources given, it is very clear that the maximum issues are arising because of the users/students' convenience and their timing.
+
+## 2.1 Since transportation issues are caused by several factors and sources:
+
+All the sources clearly mention that (generally identifying) it arises from students' convenience and their choices.
+
+The disagreement is, some sources say evening buses are crowded, only 10% of buses run full, & poor route planning. So, the disagreement is purely dependent on proper planning and management.
+
+## 2.2 Student wants more buses, but the college can't afford it.
+
+Best as seen, only 10% of buses run full, & it's crowded in the evening.
+
+*   **Case 1: Handling why only 10% of buses run full.**
+    *   It is poor route planning. Buses must be distributed & extend their capacity equally.
+
+*   **Case 2: Handling student availability.**
+    *   Since morning buses are empty, some groups of students are more likely to come by their own.
+    *   Instead, assign permanent students who must travel in the bus in the morning & evening.
+
+*   **Case 3: Making a proper route plan.**
+    *   According to the student data, who wants to travel by bus both morning & evening. This concept distributes the crowd from different locations.
+    *   These cases would easily manage the problem.
+
+## 2.3 Balanced Solution from all three sources:
+
+1.  Taking data of students who want to travel both morning and evening by bus, and planning the bus routes accordingly. This distributes the students & will be accessible for most.
+2.  Since evening buses are 4x the morning, maybe we can change some routes and drop off locations.
+3.  Improving real-time GPS tracker would make students reach their stops on time without delay.
+4.  Optimizing student ID scanner will keep the data & move it faster to get the attendance.
+
+## 2.4 Additional information would be:
+
+*   Deciding a set of students who opt/choose to travel morning & evening.
+*   Hence, by heating/setting up rules for students about their safety, they should make them both morning & evening.
+*   Make a proper system for bus fees so that students will not miss out by traveling by bus since they have paid annual fees for transportation, making users obedient.
+*   Make sure students obey & only stay at their assigned location for proper pickup & drop, not leading to misunderstanding.
+
+# Section 3: Human Behavior Patterns
+
+## 3.1 The common idea or pattern in all three situations is the "obsession of doing it in the last movement" of us human beings.
+
+We often look for instant gratification and sometimes push things that seem doable in the last. Here comes the deadline and panicking mode, and making things more complex and not able to easily achieve it.
+
+There are some time or scheduled tasks that people keep for themselves, and it's common most of the time. That is when overwork/overload comes into the picture. And when something is done all at once, it may result in systems or any task becoming slow.
+
+## 3.2 As mentioned earlier, the pattern and the idea of keeping things late and keeping a fixed time that most of us follow lead to making easier things complex.
+
+Whenever a system works or exceeds its capacity, it starts lagging and becomes slow.
+
+Or, its availability might not be there due to occupied users or tasks, leading to other users/tasks to wait.
+
+## 3.3 In a cafeteria with 120 seats, many students still struggle to find seats.
+
+This is the most common problem in any college or institution. Let's talk about why this happens.
+
+*   Almost all the cafeteria's have limited seats & access. This causes difficulty to maintain and manage.
+*   Most of the cafeteria has chairs that are not attached to the table or fixed/permanent. Students often take advantage of it and disturb/misplace the chairs & use it wherever they want. This results in a shortage of chairs/tables for others.
+
+The only way to fix is making the chairs attached to the table or replace chairs by long desks, so more people can fit in. Also, extending the cafeteria would help (like) having outside tables, and also, we can put time limits for a group to sit for the maximum amount of time, like (2-3 hours).
+
+Also, there may be a take-away option, so that people take out the food outside of the cafeteria.
+
+Applying these small changes can be a good solution, and more people can fit and enjoy their time.
+
+# Section 4: Timer App Development
+
+## Building a timer app that rings at a particular time set by the user needs an accurate precision of time function and a good and dynamic approach that needs a real-time designing.
+
+## 4.1 There are some possible ways why this rings at the wrong timing:
+
+1.  **Developers might have forgotten to use the time and date function** that stores the time/date on that instance. This becomes important as the real-time must be default.
+2.  **There might be a latency for the ringing/alarm system.** Even though the phone ringing function triggers at the right time, the output may take some time. This might be an incompatible environment or runtime/compiler issues (which most likely cause it). This delayed ringing sounds may change the user's perspective.
+3.  **Another problem might be in the code** that is happening in the runtime. The developer or there may be a function/code that has a count (for example, incrementer and decrementer) might be playing behind the scenes.
+4.  **Some exception handling may bypass some errors** which can delay or change the timer ringing output from its assigned time.
+
+## 4.2 Testing the Timer App:
+
+*   **Test 1:** Can unit testing the code, verifying whether the time function is being called or not present in the code.
+*   **Test 2:** Is checking the functions' output, and carefully reviewing for counts like increments or decrements that have a direct effect on the ringing function.
+*   **Test 3:** Checking for compiler or environmental issues, or writing exception handling more carefully, for required functions and operations.
+*   **Test 4:** Device problems that may act weird sometimes because of the RAM or caching issues. Not likely, but this also sometimes affects the output.
+
+## 4.3 To find the actual root cause, we can start by testing or checking the functions and their outputs.
+
+The first check I will do is to find if the standard time function is present or not.
+Second would be the latency in the button feature that may trigger after few seconds or minutes after pressing it.
+Testing these features and functions may solve the problem.
+
+Checking the logs is also very important. Sometimes the logs will be overwritten or combined with the past logs. That can change the timing values and give the wrong output.
+
+There are some of the tests and checks for the root cause that will help to fix the bug and run the application more smoothly.
+
+# Section 5: FAQ Chatbot for New Students
+
+## Building an FAQ chatbot for new students joining your college can be done in 4 weeks, only if we focus on the MVP that has the most important and useful features.
+
+## 5.1 When it comes to implementing core MVP features with beginners and in a short time span, a proper planning is much needed.
+
+Easy and realistic features or requirements are:
+*   Answers for top 50 common questions. These can be pre-defined, so it becomes easy.
+*   Work on mobile is also possible, because most of the web apps run on mobile phones, no matter the OS/brand. And text input is possible for an MVP.
+
+The unrealistic things or difficulties are voice input and fast responses. These features need high-level design like API, calling functions, native NLP, and others. Hence, in a short period of time, it's a difficult task to implement such features.
+
+## 5.2 The top three features to build first are:
+
+*   Top 50 answers for common questions.
+*   Work on mobile.
+*   Support text-based input.
+
+For new students who want to ask some questions about the college, there will be a set of questions and answers that are most common and expected. So these can be pre-made and set in the database or the data set. So, whenever a user asks or wants to know answers about the college, these 50 answers are displayed or queried.
+
+Work on mobile. Nowadays almost all web apps are compatible with mobiles. Building an Android/iOS app might be a bit overwhelming for beginners, but we can easily build a web app using existing frameworks like Flash/Django/Node/React. So these apps can be deployed and hosted on different platforms.
+
+## Building text-based input is much important.
+
+It signifies the user experience and interaction with the app. We can write simple queries to fetch the data or answers from the database by matching some specific keywords. And more importantly, without user interaction with the app, there is no sense of developing it. So at least, the bare minimum is text-based input.
+
+## 5.3 Plan: A 4-week plan.
+
+*   **1-Week:** The first week is where we should be working on structuring and designing the app. From ideas, learn how to implement. Also, since we are beginners, spend some time learning coding that is used specifically to build this platform.
+*   **2-Week:** By this time, we should start coding and building. Implementing core features like top 50 Q&A, text-based input, and some integrating some AI for general questions.
+*   **3-Week:** This phase must consist of making each feature work and combining all the features into a single module. Here we should be very careful and test each function and its outputs carefully.
+*   **4-Week:** The final working phase. Should have complete testing of the app and deploying it. And also, a soft launch (marketing) is required with the deployment and making it done.
+
+## 5.4 If we are behind schedule, we should put more effort on the backend rather than focusing on the frontend.
+
+*   We can build a simple chatbot with mock answers or texts so that the output should not give null.
+*   Ask AI to build the frontend and design it so that it saves lots of time designing it.
+*   Call external AI providers to understand the text input by using API keys.
+
+The important thing is to make it live with minimal features first, then keep on adding login behind it.
+
+# Section 6: Data Structures and Real-Time Systems
+
+## A data structure that uses a hash function and quickly checks if the item is present or not is an efficient structure for quick retrievals and to find if the item is present or not, or at least get the information.
+
+## 6.1 To explain this particular data structure working to a friend who has no knowledge about CS, I will give him an example of chocolate boxes.
+
+Let's say we have two different chocolate boxes from different brands.
+-> Now I will pick a chocolate from one box and put it in another.
+-> Now, to find if the different chocolate is present or not, I would use a "Bloom Tree."
+-> If we say, "If chocolates are present in the box," we will assign it as 1's; if not, 0's.
+-> If we know that the new chocolate in the box is present, so it holds the value 1.
+-> So the Bloom Tree says that "the element is 1 with other chocolates," which is also 1. So we have that element.
+-> If I did not put the chocolate back into that box, that box holds a value 0, & it says Element/chocolate not found, but sometimes it may be there.
+
+## 6.2 There are many real-life scenarios to take and explain this data structure.
+
+-> To find seat availability in cinema halls / flights, buses, trains, etc. This can be helpful at least to know whether it has available seats or not, which gives a solid information.
+-> If the seats are filled, that is once, we can actually give the inverse output and vice versa.
+-> We can also use this to find data in datasets or databases, which will help retrieve or help us know if a data or value is present or not.
+
+## 6.3 The part which is unclear is, it gives biased answers.
+
+Meaning, why would it give false alarms or why should it?
+This makes me think this data structure is not efficient in real-time systems!
+
+## 6.4 I would take a dataset with simple data values, like names or whatever relevant data.
+
+Set it to 0 or 1. Use this data structure & see if it gives correct answers or not. We can also use a simple array/list or dicts to test by converting the data into a binary/bit array, and also would add duplicate values & delete some values to check it.
+
+# Section 7: Reflections
+
+## R1: Section 1, Section 4, and Section 5 was the easiest and most interesting one.
+
+Because it deals with designing systems, finding issues/root cause, and also finding a solution. Enjoyed debugging, explaining, and learning.
+
+## R2: Section 3 was the hardest and tricky.
+
+Because it said to identify the patterns without actually relating it to the technology or the given items. It had more generalizing rather than showing some point.
+
+## R3: If I had to attempt the paper again, I would change my writing style.
+
+Instead of explaining and going off-content, I would try to be more specific.

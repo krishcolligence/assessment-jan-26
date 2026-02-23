@@ -1,0 +1,169 @@
+# **R&D Engineering Aptitude Test**
+
+**Duration:** 3 Hours
+**No coding required.**
+
+---
+
+## **Section 1 — Breaking Down a Complex Problem**
+
+### **Time: 30 minutes**
+
+Your college’s online placement portal has become very slow during placement season. Students report:
+
+* Pages take 8–10 seconds to load
+* Sometimes it shows timeout errors
+* Resume uploads fail or take too long
+* Some students face issues while others don’t
+
+The college wants to understand what might be going wrong.
+
+**1.1** Break down all possible reasons into clear groups (e.g., technical issues, network issues, student-side issues, etc.).
+
+**1.2** For each group, list possible reasons inside it. You may write assumptions if needed.
+
+**1.3** Write a step-by-step plan to check what the real problem is. Each step should check one thing at a time.
+
+---
+
+## **Section 2 — Understanding and Combining Information**
+
+### **Time: 40 minutes**
+
+Your college wants to improve the bus system. You are given the following information:
+
+### **Source A — Student Survey**
+
+* 62% say buses are late
+* 70% want real-time tracking
+* 45% want more buses
+* 30% say mornings are empty but evenings are crowded
+
+### **Source B — College Admin**
+
+* Budget cannot be increased
+* Only 10% of buses run full
+* GPS tracking pilot was done but discontinued
+* Evening demand is 4× morning demand
+
+### **Source C — Bus Drivers**
+
+* Delays due to traffic
+* Students take time because of ID scanning
+* GPS devices did not work well
+* Better route planning needed
+
+**2.1** What do all three sources agree on? What do they disagree on?
+
+**2.2** Students want more buses, but the college cannot increase the budget. Explain how you would handle this contradiction in a practical way.
+
+**2.3** Suggest a balanced solution for improving the bus system. Use information from all three sources.
+
+**2.4** Write three pieces of additional information that would help you make a better recommendation.
+
+---
+
+## **Section 3 — Finding Patterns**
+
+### **Time: 20 minutes**
+
+### **Situation A:**
+
+College WiFi becomes slow between 2–4 PM.
+
+### **Situation B:**
+
+The gym is full between 6–8 PM but empty at most other times.
+
+### **Situation C:**
+
+The library printer queue becomes very long right before assignment deadlines.
+
+**3.1** What is the common idea or pattern in all three situations?
+
+**3.2** Describe this pattern in simple, general terms without mentioning WiFi, gym, or printers.
+
+**3.3** Apply the same pattern to this situation:
+“In a cafeteria with 120 seats, students sometimes cannot find seats even though the average occupancy is only 40%.”
+Explain why this happens and suggest one solution.
+
+---
+
+## **Section 4 — Figuring Out Why Something Is Wrong**
+
+### **Time: 25 minutes**
+
+You built a simple timer app. When you set it for 10 minutes, sometimes it rings at 11 minutes, and sometimes at 9 minutes.
+
+**4.1** Write at least four possible reasons why this might be happening.
+(*Possible reason = hypothesis, your guess for why something is happening.*)
+
+**4.2** For each reason, write a simple test to confirm it. Each test should check only one thing.
+
+**4.3** If more than one reason seems possible, explain how you would find the actual root cause.
+
+---
+
+## **Section 5 — Working with Limits and Choosing What Matters**
+
+### **Time: 30 minutes**
+
+You and three friends want to build a simple FAQ chatbot for new students joining your college.
+
+### **Requirements**
+
+* Answer top 50 common questions
+* Work on mobile
+* Fast responses
+* Support both text and voice input
+
+### **Your Limits**
+
+* 4 weeks
+* All team members are beginners
+* No paid tools
+* Exams in Week 3
+* Only 8–10 hours per week per person
+
+**5.1** Which requirements are easy or realistic? Which are difficult or unrealistic? Why?
+
+**5.2** Choose the top three features to build first and explain why these matter most.
+
+**5.3** Create a practical 4-week work plan based on your limits.
+
+**5.4** After two weeks, you realize you are behind schedule. What will you do now? Write a practical backup plan.
+
+---
+
+## **Section 6 — Quick Learning Challenge**
+
+### **Time: 25 minutes**
+
+Read the explanation below:
+
+> A **Bloom Filter** is a data structure that helps you quickly check if an item is definitely not present in a set, or maybe present in the set.
+> It uses several hash functions to turn items into positions in a bit array.
+> If all those positions are 1, the item may be in the set.
+> If even one position is 0, the item is definitely not in the set.
+> It is very fast and uses very little memory.
+> It can give false alarms (“maybe present” when the item is not actually present),
+> but it never says “not present” when the item is actually present.
+
+**6.1** Explain this idea in simple words, as if to a friend who is not from computer science.
+
+**6.2** Give two real-life situations where this idea could be useful.
+
+**6.3** Write what parts of this idea are still unclear to you.
+
+**6.4** Write one experiment or thought experiment you could do to understand Bloom Filters better.
+
+---
+
+## **Section 7 — Reflection**
+
+### **Time: 10 minutes**
+
+**R.1** Which section felt easiest for you? Why?
+**R.2** Which section felt hardest? Why?
+**R.3** If you had to attempt this paper again, what would you change in your approach?
+
